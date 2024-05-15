@@ -3,7 +3,7 @@
 ## Description
 
 - This is a customizable template for a restaurant website
-- I built this website during my learning journey at Route full-stack web development Diploma. This template was extra self study and training
+- I built this website during my learning journey at Route full-stack web development Diploma. This template was extra self-study and training
 
 ## Technologies Used
 - HTML
@@ -12,7 +12,7 @@
 ## Features
 - Responsive design that looks great on all devices.
 - Easy-to-customize layout and styles.
-- Have 06 Sections
+- Have 12 Sections
   - Home Screen with animation hover
   - About
   - Why Us 
@@ -23,7 +23,7 @@
   - Testimonials
   - Gallery with amazing view for all screen
   - Chefs with nice hover screen
-  - contact form with google map location
+  - contact form with Google map location
   - footer with all links
 - Nice loading screen
 
