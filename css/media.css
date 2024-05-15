@@ -1,0 +1,206 @@
+/* =====> Media Query <===== */
+
+/* Small devices (portrait tablets, from 480px to 767px) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* ===== top-bar ===== */
+  .top-bar .container {
+    justify-content: flex-start;
+  }
+  /* ===== home Section ===== */
+  .home .content h1 {
+    font-size: 48px;
+  }
+  .home .content h2 {
+    font-size: 24px;
+  }
+  /* ===== Book a table Section ===== */
+  .book form {
+    flex-flow: row wrap;
+  }
+  .book input {
+    width: calc(50% - var(--gab) / 2);
+  }
+  .book textarea {
+    width: 100%;
+  }
+  /* ===== Gallery Section ===== */
+  .gallery .gallery-items {
+    flex-flow: row wrap;
+  }
+  .gallery .item {
+    width: 33.3%;
+  }
+  /* ===== Chefs Section ===== */
+  .chefs .chefs-items {
+    flex-flow: row wrap;
+  }
+  .chefs .item {
+    width: calc((100% - var(--gab)) / 2);
+  }
+  /* ===== Contact Section ===== */
+  .contact form {
+    flex-flow: row wrap;
+  }
+  .contact form input {
+    width: calc((100% - var(--gab)) / 2);
+  }
+  .contact form input[name="subject"],
+  .contact form textarea {
+    width: 100%;
+  }
+  /* ===== footer Section ===== */
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .container > div {
+    width: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  /* ===== header ===== */
+  header nav {
+    display: flex;
+  }
+  header .book-link {
+    display: block;
+  }
+  header .fa-bars {
+    display: none;
+  }
+  /* ===== home Section ===== */
+  .home {
+    text-align: start;
+  }
+  .home .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .home .content .text {
+    width: 66.67%;
+  }
+  .home .content .btns {
+    justify-content: start;
+  }
+  /* ===== About Section ===== */
+  .about .container {
+    flex-direction: row;
+    align-items: start;
+  }
+  .about .photo {
+    width: 50%;
+    order: 1;
+  }
+  .about .content {
+    width: 50%;
+  }
+  /* ===== Why us Section ===== */
+  .why-us .items {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .why-us .item {
+    width: 33.3%;
+  }
+  /* ===== menu Section ===== */
+  .menu .menu-items {
+    flex-flow: row wrap;
+  }
+  .menu .item {
+    width: calc(50% - var(--gab));
+  }
+  /* ===== specials Section ===== */
+  .specials .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .specials .content ul {
+    width: 25%;
+    padding: 10px;
+  }
+  .specials .content ul li {
+    border-right: 1px solid var(--color-primary);
+  }
+  .specials .content .photo {
+    order: 1;
+    width: 25%;
+  }
+  .specials .content .details {
+    width: 50%;
+    padding: 10px;
+  }
+  /* ===== events Section ===== */
+  .events .content {
+    flex-direction: row;
+  }
+  /* ===== Book a table Section ===== */
+  .book input {
+    width: calc((100% - var(--gab) * 2) / 3);
+  }
+  /* ===== Gallery Section ===== */
+  .gallery .item {
+    width: 25%;
+  }
+  /* ===== Chefs Section ===== */
+  .chefs .item {
+    width: calc((100% - var(--gab) * 2) / 3);
+  }
+  /* ===== Contact Section ===== */
+  .contact .content-container {
+    display: flex;
+    margin-top: 30px;
+  }
+  .contact .content-container .details-cards {
+    width: 30%;
+    margin: 0 15px 0 0;
+  }
+  .contact .content-container .card {
+    padding-top: 0;
+  }
+  .contact .content-container form {
+    width: 70%;
+  }
+  /* ===== footer Section ===== */
+  footer .container .info,
+  footer .container .newsletter {
+    width: 30%;
+  }
+  footer .container .links,
+  footer .container .services {
+    width: 20%;
+  }
+}
+
+/* Extra large devices (large laptops/desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  /* ===== Testimonials Section ===== */
+
+  .testimonials .testimonials-items {
+    display: flex;
+    gap: var(--gab);
+  }
+  .testimonials .item:nth-child(2),
+  .testimonials .item:nth-child(3) {
+    display: block;
+  }
+}
